@@ -34,7 +34,7 @@ function articleUrl(titleId) {
 
 function updateTitle(titleId, articleId) {
     identifierDiv.text(titleId ? ('§ ' + titleId + (articleId ? '-' +articleId:'')) :  '');
-    var baseText = 'اﻟﺩﺳﺘﻮﺭ';
+    var baseText = 'ﻣﺸﺮﻭﻉ اﻟﺩﺳﺘﻮﺭ';
     var titleName;
     var data = titlesDiv.datum();
     for (var idx in data){
