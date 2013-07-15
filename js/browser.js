@@ -144,7 +144,11 @@ d3.json('data/constitution_ar.json', function(rawData) {
         listArticles(titleId, cleanedUpData[titleId]);
         d3.select('.titles-container').classed('selected', true);
         d3.select('.articles-container').classed('selected', false);
+        //remove the article details when you switch to a new title:
+        d3.select('#article').selectAll('div.content').remove()
+        
         updateTitle(titleId,null);
+        
     }
 
     function articles(titleId, articleId) {
